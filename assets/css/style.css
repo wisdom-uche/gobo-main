@@ -120,8 +120,10 @@
 /* helping our client */
 /* helping our client */
 #client {
-    background: rgba(18, 131, 6, 0.9);
-    height: 50vh;
+    background-image: url("/assets/img/banner2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
 }
 #client h2 {
     display: flex;
@@ -281,8 +283,26 @@
     /* helping our client */
     /* helping our client */
     #client {
-        background: rgba(18, 131, 6, 0.9);
+        background-image: url("/assets/img/banner2.jpg");
+        background-size: cover;
+        background-position: center center;
         height: 100%;
+    }
+    #client h2 {
+        display: flex;
+        flex-direction: row;
+    }
+    #client h2:before, #client h2:after{
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid white;
+        margin: auto;
+    }
+    #client h2:before {
+        margin-right: 0.5rem;
+    }
+    #client h2:after {
+        margin-left: 0.5rem;
     }
     #client a {
         text-decoration: none;
